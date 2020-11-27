@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
+import Buscador from './components/Buscador'
 
 class App extends  Component {
   render(){
     return (
-      <div className="App">
-        <h1>Hola mundo</h1>
+      <div className="App container">
+        <div className = "jumbotron">
+          <p className ="lead text-center">Buscador de imagenes</p>
+          <Buscador/>
+        </div>
+      
       </div>
     );
   }
