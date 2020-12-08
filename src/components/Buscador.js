@@ -8,11 +8,12 @@ class Buscador extends Component {
 
     handleGetData = (e) => {
         e.preventDefault();
-        //se extrae el contenido del input o bien se toma el valor del input
-        //console.log(this.busquedaRef.current.value);
+
+        //se extrae el contenido del input 
+ 
         const termino = this.busquedaRef.current.value;
 
-        //se envia el valor al componente padre
+        //se envia el valor al componente principal
         this.props.datosBusqueda(termino);
 
     }
@@ -26,7 +27,7 @@ class Buscador extends Component {
                                 ref = {this.busquedaRef} 
                                 type="text" 
                                 className="form-control form-control-lg" 
-                                placeholder ="Busca tu imagen. Ejemplo: Futbol"
+                                placeholder ="Inserta el nombre del producto"
                             />     
                     </div>
 
